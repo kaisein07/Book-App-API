@@ -4,16 +4,19 @@ const bookRoutes = require('./routes/bookRoutes')
 const authorRoutes = require('./routes/authorRoutes')
 const userRoutes = require('./routes/userRoutes')
 
-const port = 5500
+const port = 4000
 const app = express()
 
-/*require('dotenv').config()*/
+require('dotenv').config()
 
 app.use(express.json())
 
 app.use('/api/books', bookRoutes)
 app.use('/api/authors', authorRoutes)
 /*app.use('/api/user', userRoutes)*/
+
+/*const  = require('./routes/userRoutes');*/
+app.use('/api/user', userRoutes);
 
 // Connecter à la base de données
 dataBase()

@@ -1,4 +1,4 @@
-const jwt = require('jsonwebtoken');
+/*const jwt = require('jsonwebtoken');
 
 const generateToken = (user) => {
 
@@ -8,4 +8,4 @@ const generateToken = (user) => {
 
 }
 
-module.exports = generateToken
+module.exports = generateToken*/
